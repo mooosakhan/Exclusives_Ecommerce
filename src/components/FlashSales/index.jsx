@@ -2,7 +2,7 @@ import React from "react";
 
 const index = () => {
   return (
-    <div className="flex flex-col mx-24 gap-4 my-36">
+    <div className="flex flex-col mx-[9vw] gap-4 my-36">
       <div className="todays  flex items-center gap-4">
         <div className="bg-red-500 h-12 w-6 rounded-md"></div>
         <div className="text-red-500 font-bold text-2xl">Today's</div>
