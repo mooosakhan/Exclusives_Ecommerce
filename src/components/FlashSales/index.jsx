@@ -1,16 +1,17 @@
 import React from "react";
 
-const index = () => {
+const index = ({main,text,type}) => {
+   console.log(main)
   return (
-    <div className="flex flex-col mx-[9vw] gap-4 my-36">
+    <div className="flex flex-col mx-[9vw] gap-4 my-24">
       <div className="todays  flex items-center gap-4">
         <div className="bg-red-500 h-12 w-6 rounded-md"></div>
-        <div className="text-red-500 font-bold text-2xl">Today's</div>
+        <div className="text-red-500 font-bold text-2xl">{main}</div>
       </div>
       <div className="flashSales flex justify-between items-center">
         <div className="flashTime flex justify-around gap-24 items-end">
-        <div className="sa  text-5xl font-semibold">Flash Sales</div>
-        <div className="time flex gap-4  justify-center items-center">
+        <div className="text-[3vw] font-semibold">{text}</div>
+        <div className="time flex gap-4  justify-center items-center " style={{visibility:type}} >
           <span className="flex flex-col">
             <span className="text-md font-semibold">Days</span>
             <span className="text-4xl font-bold">03</span>
