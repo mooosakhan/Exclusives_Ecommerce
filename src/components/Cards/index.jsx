@@ -1,7 +1,7 @@
 import React from "react";
 import FiveStar88 from "./../../assets/assets/FiveStar88.png";
 
-const Cards = ({ Gamepad }) => {
+const Cards = ({Image,types }) => {
   return (
     <div className="mb-6 flex flex-col gap-5 justify-center items-center mx-4">
       <div className="flex flex-wrap justify-center gap-4">
@@ -11,9 +11,9 @@ const Cards = ({ Gamepad }) => {
             className="h-96 w-72 sm:w-68 flex flex-col align-top gap-2"
           >
             <div className="image flex align-middle h-[60%] justify-center items-center bg-zinc-300 bg-cover">
-              <img className="bg-cover w-56" src={Gamepad} alt="Gamepad" />
+              <img className="bg-cover w-56" src={Image} alt="Gamepad" />
             </div>
-            <div className="title text-2xl font-semibold">
+            <div className="title text-xl lg:text-2xl font-semibold">
               HAVIT HV-G92 
             </div>
             <div className="price text-red-500 text-lg">
@@ -25,7 +25,7 @@ const Cards = ({ Gamepad }) => {
         ))}
       </div>
       <div className="button">
-        <button className="bg-red-500 font-semibold text-zinc-50 rounded-lg p-3 text-lg">
+        <button style={{visibility:types}} className=" bg-red-500 font-semibold text-zinc-50 rounded-lg p-3 text-lg">
           View all Products
         </button>
       </div>
